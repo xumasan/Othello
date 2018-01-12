@@ -1,9 +1,9 @@
 COMPILER = g++
 CFLAGS   = -std=c++11 -Wall
 TARGET   = Reversi
-OBJDIR   = ./obj
+OBJDIR   = ../obj
 ifeq "$(strip $(OBJDIR))" ""
-  OBJDIR = .
+  OBJDIR = ..
 endif
 SOURCES  = $(wildcard *.cxx)
 OBJECTS  = $(addprefix $(OBJDIR)/, $(SOURCES:.cxx=.o))
